@@ -8,29 +8,36 @@
     </head>
     <style>
         body {
-            background-color: #8e922f;
+            background-color: #156a64;
         }
         p {
             background-color: azure;
             text-align: center;
         }
         #kom {
+            width: 100%;
+            max-width: fit-content;
+            max-height: fit-content;
             padding:3px;
-            margin-left: 200px;
-            margin-right: 150px;
+            margin-left: 50%;
+            margin-right: 50%;
             text-align: center;
             background-color: rgb(139, 139, 203); 
             color: chartreuse;
         }
         #box {
-            padding: 10px;
+            width: 100%;
+            max-width: fit-content;
+            max-height: fit-content;
+            padding: 5px;
             text-align: center;
-            color: blue;
-            background-color: blanchedalmond;
-            margin-top: 20px;
+            color: rgb(0, 51, 255);
+            background-color: rgb(197, 205, 45);
+            border-top-right-radius: 100%;
+            margin-top: 0.5px;
             margin-bottom: 20px;
-            margin-left: 400px;
-            margin-right: 400px;
+            margin-left: 100px;
+            margin-right: 200px;
         }
 
         .container {
@@ -38,6 +45,8 @@
             display:flex;
             gap:25px;
             width:100%;
+            max-width: fit-content;
+            max-height: fit-content;
         }
 
         .box_mendai {
@@ -60,13 +69,32 @@
            background-color: rgb(6, 9, 9);
             color: #fdfdfe;  
         }
+
+        .button {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 50%;
+            background-color: rgb(237, 243, 65);
+            color: rgb(30, 78, 210);
+            border-radius: 20px;
+            border: 3px solid rgb(2, 0, 128)
+        }
         
     </style>
 
     <body>
+
+
+
         <div id="kom"><h1><u>Clean Chol, Warrrrrrrrraaaa!!!!!!!!!!!!!!!!!!!!</u></h1></div>
-       <p> <img src="flipping the hand.jpg" alt="this is an image" width="700px" height="500px"></p>
-       <p><div id="box">HOLIM BLOU!!!</div></p>
+       <p> <img src="jaykay.jpg" alt="this is an image" width="100%" max-height="fit-content" max-width="fit-content"></p>
+
+
+       
+       <p><div id="box">KUALA Jonah <br>Mangi Wild West</div></p>
+
+
 
         <div class="container">
             <div class="box_mendai">
@@ -77,6 +105,35 @@
                 <h1>Me kaikai, you maski!!!</h1>
             </div>
         </div>
+
+
+
+        <!--This is a Button.-->
+        <a href="https://maps.google.com/"><button class="button">Click here to view Google Map</button></a>
+
+
+
+        <h1>Hello JavaScript!</h1>
+
+
+
+        <script>
+            // Debuging console messages
+            console.log("Hello from JavaScript");
+            // Writing webpage text
+            document.write('JS is working!');
+            document.write("<br>");
+            console.log(x);
+            var x=10;
+            document.write(x);
+
+            document.write('<br>');
+            var y=20;
+                r= 30;
+                p= y+r;
+                console.log('addition');
+                document.write(p);
+        </script>
 
     </body>
 </html>
