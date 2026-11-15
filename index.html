@@ -8,7 +8,7 @@
     </head>
     <style>
         body {
-            background-color: #156a64;
+            background-color: #154e6a;
         }
         p {
             background-color: azure;
@@ -71,14 +71,30 @@
         }
 
         .button {
+            
             text-align: center;
             padding: 10px;
             margin-top: 20px;
             margin-left: 50%;
-            background-color: rgb(237, 243, 65);
+            background-color: rgb(249, 252, 46);
             color: rgb(30, 78, 210);
             border-radius: 20px;
             border: 3px solid rgb(2, 0, 128)
+        }
+        .button:hover {
+            color: #b2c40f;
+            background-color: rgb(158, 86, 161);
+            transform: scale(1.4);
+        }
+        .button2 {
+            background-color: #c40f0f;
+            padding: 10px;
+            margin-left: 50%;
+        }
+        .button2:hover {
+            color: #c40f70;
+            background-color: chartreuse;
+            transform: scale(1.5);
         }
         
     </style>
@@ -113,11 +129,15 @@
 
 
 
-        <h1>Hello JavaScript!</h1>
+        <h1>Hello JavaScript!</h1><br>
+
+        <!--Button for the Google Map link-->
+        <button class="button2"><a href="https://maps.google.com">Bluetooth</a></button>
 
 
 
         <script>
+            document.write('<br>');
             // Debuging console messages
             console.log("Hello from JavaScript");
             // Writing webpage text
@@ -133,6 +153,13 @@
                 p= y+r;
                 console.log('addition');
                 document.write(p);
+
+                document.write('<br>');
+                var v= 300;
+                    l= 400;
+                    k= v+l;
+                    console.log(k);
+                    document.write(k)
         </script>
 
     </body>
