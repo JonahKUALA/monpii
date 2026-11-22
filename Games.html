@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+content="width=device-width,initial-scale=1.0">
+
+<title> Turbo Road - Car Racing</title>
+<link rel="stylesheet"
+href="style.css">
+        </head>
+
+        <body>
+            <main class="game-shell">
+                <header class="top-bar">
+                    <div>
+                        <h1 class="ratty">WildWestWanyo Turbo Racing</h1>
+                        <br>
+                        <br>
+                        <H1>AI Road Test By WANYO</H1>
+                    </div>
+
+                    <div class="score-panel">
+                        <span>SCORE POINTS:</span>
+                        <strong id="score">0</strong>
+                    </div>
+                </header>
+
+                <section class="game-area">
+                    <canvas id="gameCanvas" width="420" height="440"></canvas>
+                    <div class="overlay" id="overlay">
+                        <div class="overlay-card">
+                            <p class="eyebrow" id="overlayEyebrow">Kaim!<br>READY TO RACE?</p>
+                            <h2 id="overlayTitle">Start your engine</h2>
+                            <H3 id="overlayMessage">WANYO, Dodge traffic and see how far you can go.</H3>
+                            <button id="startButton">START RACE</button>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="controls">
+                    <p><strong>Move:</strong> A / D</p>
+                    <p><strong>Tip:</strong> Avoid Traffic!</p>
+                </footer>
+
+                <div class="mobile-controls">
+                    <button id="leftButton"> LEFT</button>
+                    <button id="rightButton">RIGHT </button>
+                </div>
+            </main>
+            <script src="game.js"></script>
+        </body>
+</html>
