@@ -1,165 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en:us;">
-        <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>FUN</title>
-    </head>
-    <style>
-        body {
-            background-color: #154e6a;
-        }
-        p {
-            background-color: azure;
-            text-align: center;
-        }
-        #kom {
-            font-size: 400%;
-            color: aliceblue;
-        }
-        #box {
-            width: 100%;
-            max-width: max-content;
-            padding: 10px;
-            text-align: left;
-            color: rgb(8, 5, 19);
-            background-color: rgb(197, 205, 45);
-            border-top-right-radius: 80%;
-            margin-top: 0.5px;
-            margin-bottom: 20px;
-            margin-left: 10px;
-            margin-right: 200px;
-        }
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+content="width=device-width,initial-scale=1.0">
 
-        .container {
-            border: 10px solid rgb(213, 29, 164);
-            display:flex;
-            gap:12px;
-            max-width: max-content;
-            max-height: max-content;
-        }
+<title> Turbo Road - Car Racing</title>
+<link rel="stylesheet"
+href="style.css">
+        </head>
 
-        .box_mendai {
-            border: 20px solid rgb(19, 53, 104);
-            text-align: center;
-            border-radius: 20px;
-            flex: 1;
-            padding: 10%;
+        <body>
+            <main class="game-shell">
+                <header class="top-bar">
+                    <div>
+                        <h1 class="ratty">WildWestWanyo Turbo Racing</h1>
+                        <br>
+                        <br>
+                        <H1>AI Road Test By WANYO</H1>
+                    </div>
 
-            background-color: rgb(91, 156, 156);
-            color: rgb(252, 254, 253);
-        }
+                    <div class="score-panel">
+                        <span>SCORE POINTS:</span>
+                        <strong id="score">0</strong>
+                    </div>
+                </header>
 
-        .box_laap {
-            border: 20px solid rgb(19, 53, 104);
-            padding:10%;
-            text-align: center;
-            border-radius: 20px;
-            flex: 1;
-           background-color: rgb(91, 156, 156);
-            color: #fdfdfe;  
-        }
+                <section class="game-area">
+                    <canvas id="gameCanvas" width="420" height="440"></canvas>
+                    <div class="overlay" id="overlay">
+                        <div class="overlay-card">
+                            <p class="eyebrow" id="overlayEyebrow">Kaim!<br>READY TO RACE?</p>
+                            <h2 id="overlayTitle">Start your engine</h2>
+                            <H3 id="overlayMessage">WANYO, Dodge traffic and see how far you can go.</H3>
+                            <button id="startButton">START RACE</button>
+                        </div>
+                    </div>
+                </section>
 
-        .button {
-            
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            margin-left: 50%;
-            background-color: rgb(249, 252, 46);
-            color: rgb(30, 78, 210);
-            border-radius: 20px;
-            border: 3px solid rgb(2, 0, 128)
-        }
-        .button:hover {
-            color: #b2c40f;
-            background-color: rgb(158, 86, 161);
-            transform: scale(1.4);
-        }
-        .button2 {
-            background-color: #c40f0f;
-            padding: 10px;
-            margin-left: 50%;
-        }
-        .button2:hover {
-            color: #c40f70;
-            background-color: chartreuse;
-            transform: scale(1.5);
-        }
+                <footer class="controls">
+                    <p><strong>Move:</strong> A / D</p>
+                    <p><strong>Tip:</strong> Avoid Traffic!</p>
+                </footer>
 
-        .STEM {
-            background-color: #030207;
-        }
-        
-    </style>
-
-    <body>
-
-
-
-    <h1 id="kom">Hi Dear, welcome to my channel!</h1>
-       
-
-       
-       <p><div id="box">This is my main Web Page where you have all the imformations to be selected and work on according to <br> your preferences. 
-        All the informations you need are respectively on the links provided below, click each one  of them to view them...</div></p>
-
-
-
-        <div class="container">
-            <div class="box_mendai">
-                <p class="STEM"><button><a href="STEM NOTES">STEM Documents</a></button> 
-                <br>The link above contain all the notes of so called a STEM Course that is offered in the six (6) National School of Excellences in the country.</p>
-                <h1><button><a href="PNG News">PNG News</a></button></h1>
-                <h1><button><a href="ADs">ADVERTISEMENTS</a></button></h1>
-                <h1><button><a href="Tech">TECHNOLOGY</a></button></h1>
-                <h1><button><a href="Education">EDUCATION</a></button></h1>
-            </div>
-
-            <div class="box_laap">
-                <h1><button><a href="Entertainment">ENTERTAINMENT</a></button></h1>
-                <h1><button><a href="Download">DOWNLOADS</a></button></h1>
-                <h1><button><a href="About.html">ABOUT US</a></button></h1>
-                <h1><button><a href="Mission.html">OUR MISSION</a></button></h1>
-                <h1><button><a href="Contact">CONTACT US</a></button></h1>
-            </div>
-        </div>
-
-
-
-        <!--This is a Button.-->
-        <button class="button" href="https://maps.google.com/">Click here to view Google Map</button>
-
-
-
-        <h1>Hello JavaScript!</h1><br>
-
-        <script>
-            document.write('<br>');
-            // Debuging console messages
-            console.log("Hello from JavaScript");
-            // Writing webpage text
-            document.write('JS is working!');
-            document.write("<br>");
-            console.log(x);
-            var x=10;
-            document.write(x);
-
-            document.write('<br>');
-            var y=20;
-                r= 30;
-                p= y+r;
-                console.log('addition');
-                document.write(p);
-
-                document.write('<br>');
-                var v= 300;
-                    l= 400;
-                    k= v+l;
-                    console.log(k);
-                    document.write(k)
-        </script>
-
-    </body>
+                <div class="mobile-controls">
+                    <button id="leftButton"> LEFT</button>
+                    <button id="rightButton">RIGHT </button>
+                </div>
+            </main>
+            <script src="game.js"></script>
+        </body>
 </html>

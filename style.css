@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #101521;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.ratty {
+  color: chocolate; 
+  background-color: chartreuse;
+  text-underline-position: below;
+}
+
+.game-shell {
+  width: min(100%, 520px);
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.eyebrow {
+  color: #ffcc4d;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.score-panel {
+  padding: 10px 16px;
+  text-align: right;
+  background: #202a3b;
+  border-radius: 12px;
+}
+
+.score-panel span {
+  display: block;
+  color: #aab5c7;
+  font-size: 11px;
+}
+
+.score-panel strong {
+  color: #ffcc4d;
+  font-size: 26px;
+}
+
+.game-area {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #3a465b;
+  border-radius: 16px;
+  background: #252a32;
+  box-shadow: 0 20px 50px #0007;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #08101bbd;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay-card {
+  width: 100%;
+  max-width: 320px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid #536178;
+  border-radius: 18px;
+  background: #182234;
+}
+
+.overlay-card h2 {
+  font-size: 27px;
+}
+
+.overlay-card p:not(.eyebrow) {
+  color: #c4cede;
+  line-height: 1.5;
+}
+
+button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #ffcc4d;
+  color: #1a202c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffdc7d;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #b9c4d4;
+  font-size: 13px;
+}
+
+.mobile-controls {
+  display: none;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.mobile-controls button {
+  flex: 1;
+}
+
+@media (max-width: 560px) {
+  body {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .controls {
+    font-size: 11px;
+  }
+
+  .mobile-controls {
+    display: flex;
+  }
+}
+
+#pauseButton {
+    padding: 10px 12px;
+    background-image: #4fc3f7;
+    white-space: nowrap;
+}
+
+#pauseButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    gap:10px;
+}
+
+@media (max-width: 420px) {
+    .top-bar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
